@@ -16,5 +16,5 @@ epc<-select(epc_orig,-(Time))
 epc<-filter(epc,Date >= as.Date("2007-02-01","%Y-%m-%d") & Date <= as.Date("2007-02-02","%Y-%m-%d"))
 
 png(file="Plot1.png",width = 480, height = 480, units = "px")
-with(epc, hist(Global_active_power,col="red",xlab="Global Active Power (kilowatts)"))
+with(epc, hist(Global_active_power,col="red",xlab="Global Active Power (kilowatts)",main="Global Active Power"))
 dev.off()
